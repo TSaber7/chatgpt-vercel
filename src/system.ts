@@ -8,11 +8,24 @@ export const setting = {
 }
 
 export const message = `Powered by OpenAI Vercel
-- 由 [@ourongxing](https://github.com/ourongxing) 基于 [chatgpt-demo](https://github.com/ddiu8081/chatgpt-demo) 开发，查看 [源码](https://github.com/ourongxing/chatgpt-vercel)，欢迎自部署。
-- 该网站仅作为演示，不提供长期服务，网站密码为 \`ourongxing\`，请勿滥用。
-- 如果本项目对你有所帮助，可以给小猫 [买点零食](https://cdn.jsdelivr.net/gh/ourongxing/chatgpt-vercel/assets/reward.gif)，但不接受任何付费功能请求。
-- 该预览页面域名由 [@AUDI_GUZZ](https://m.okjike.com/users/4af3cfb4-1291-4a8b-b210-f515c86934a9) 和 [@Airyland](https://m.okjike.com/users/C6C8DE3A-E89D-4978-9E7D-B2E167D835A9) 免费提供，感谢。API Key 由我自己免费提供，注意不要滥用。
-- [[Shift]] + [[Enter]] 换行。开头输入 [[/]] 或者 [[空格]] Prompt 预设。[[↑]] 可编辑最近一次提问。点击顶部名称滚动到顶部，点击输入框滚动到底部。`
+- 输入框
+  - 开头输入 [[/]] 或者 [[空格]] 查看预设提示（Prompt）。
+  - [[↑]] 可编辑最近一次提问。
+  - 点击顶部名称滚动到顶部，点击输入框滚动到底部。
+  - [[Shift]] + [[Enter]] 换行。
+- 左下角有更多设置：
+  - 思维发散程度：越高 ChatGPT 思维就越发散。根据不同的问题可以调节这个选项，追求创意性的就可以调高。
+  - 开启连续对话：实现上下文功能，每次把全部对话传过去，有最大上文 2048 token 的限制。
+  - 系统角色指令：会在每次提问时添加，一定用加句号。主要用于对 ChatGPT 的语气，口头禅这些进行定制。
+- 输入框右边的四个按钮：
+  - 对话生成图片，电脑上复制到剪贴板，手机上下载。
+  - 对话生成 Markdown，复制到剪贴板。
+  - 重新回答最近的一个问题。
+  - 清空对话。
+- 查询余额
+  - 发送 sk- 开头的 key，可以直接查询余额。换行查询多个。
+  - 使用预设提示第一个，发送“查询填写的 Key 的余额”来直接查询填写的 key 的余额。
+`
 
 export type Setting = typeof setting
 
